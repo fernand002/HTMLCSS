@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+   
+    <script>
+        function borrarDatos() {
+            document.getElementById("registroForm").reset();
+        }
+    </script>
+</head>
+<body>
+
+<div class="formulario">
+    <h2>Formulario de Registro</h2>
+    <form id="registroForm">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" size="9" >
+        </div>
+
+        <div class="campo">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" size="9" >
+        </div>
+
+        <div class="campo">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" size="9" >
+        </div>
+
+        <div class="campo">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" size="9" >
+        </div>
+
+        <div class="campo">
+            <label>
+                <input type="radio" name="categoria" value="Hombre" >
+                Hombre
+            </label><br>
+    
+            <label>
+                <input type="radio" name="categoria" value="Mujuer">
+                Mujer
+            </label><br><br>
+        </div>
+
+        <div class="campo">
+            <label>Incluir Foto:</label>
+            <input type="file" name="foto" accept="image/*">
+        </div>
+
+        <div class="campo">
+            <label><input type="checkbox" name="boletin"> Suscribirme al boletín de novedades</label>
+        </div>
+
+        <input type="submit" value="Guardar Cambios">
+        <button type="button" onclick="borrarDatos()">Borrar Datos</button>
+    </form>
+</div>
+
+</body>
+</html>
