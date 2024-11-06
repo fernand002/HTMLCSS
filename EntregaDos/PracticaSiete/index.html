@@ -7,6 +7,7 @@
 </head>
 <body>
     <form>
+        <h1>Informacion Sobre el pruducto</h1>
         <fieldset></br>
 
         <legend>Datos Basicos</legend>
@@ -33,9 +34,29 @@
         <legend>Datos Economicos</legend></br>
         <label for="name">Precio</label>
         <input type="text" id="name" name="name"  placeholder="Precio">
-        <label for="name">Impuestos</label>
-        <input type="text" id="name" name="name"  placeholder="Impuestos"></br></br></br>
-
+        <select id="mes" name="mes">
+            <option value="null"></option>
+            <option value="Cuatro">4%</option>
+            <option value="Siete">7%</option>
+            <option value="dieciseis">16%</option>
+            <option value="veinticinco">25%</option>
+            <form>
+                <p>Promocion</p>
+                <label>
+                    <input type="radio" name="categoria"  required>
+                    Ninguno
+                </label>
+        
+                <label>
+                    <input type="radio" name="categoria" >
+                    Transporte Publico 
+                </label>
+                <label>
+                    <input type="radio" name="categoria" >
+                    Descuento 5%
+                </label>
+            </form>
+        </select>
         
     </fieldset>
     </form>
