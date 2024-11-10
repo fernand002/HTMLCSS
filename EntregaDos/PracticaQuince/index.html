@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Temperatura</title>
+    
+</head>
+<body>
+
+<section>
+    <h2>Seleccionar Temperatura</h2>
+    <form>
+        <label for="temperatura">Seleccione una temperatura (°C):</label>
+        <input type="range" id="temperatura" name="temperatura" min="-50" max="50" value="20" step="1" oninput="updateTempValue(this.value)">
+        
+        <br>
+        <span id="tempValue">20°C</span> 
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<script>
+    
+    function updateTempValue(value) {
+        document.getElementById('tempValue').textContent = value + '°C';
+    }
+</script>
+
+</body>
+</html>

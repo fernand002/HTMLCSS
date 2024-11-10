@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Patente de Automóvil</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Puedes incluir tus estilos aquí -->
+</head>
+<body>
+    <header>
+        <h1 style="font-weight: normal;">Ingreso de Patente de Automóvil</h1>
+    </header>
+    
+    <section>
+        <form>
+            <fieldset>
+                <legend>Datos del Vehículo</legend>
+                </br>
+                <label for="patente">Patente:</label>
+                <input type="text" id="patente" name="patente" placeholder="ABC123" maxlength="6" required pattern="[A-Za-z]{3}[0-9]{3}">
+                <small style="color: grey;">Formato: 3 letras seguidas de 3 números</small>
+                <br><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Confimar">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Navegador y Periódicos</title>
+</head>
+<body>
+
+<section>
+    <h2>Ingrese el nombre de su navegador</h2>
+    <form>
+        
+        <label for="navegador">Navegador:</label>
+        <input type="text" id="navegador" name="navegador" list="listanavegadores" placeholder="Ej: Chrome">
+        
+        <datalist id="listanavegadores">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+
+        <br><br>
+
+        
+        <label for="periodicos">Seleccione sus periódicos favoritos:</label>
+        <select id="periodicos" name="periodicos" multiple>
+            <option value="El País">El País</option>
+            <option value="La Vanguardia">La Vanguardia</option>
+            <option value="Clarín">Clarín</option>
+            <option value="El Mundo">El Mundo</option>
+            <option value="ABC">ABC</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+</body>
+</html>

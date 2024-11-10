@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Carga</title>
+
+</head>
+<body>
+    <header>
+        <h1 style="font-weight: normal;">Ingreso de Datos</h1>
+    </header>
+    
+    <section>
+        <form>
+            <fieldset>
+                <legend>Número Binario de 8 Dígitos</legend>
+                
+                <label for="numero-binario">Número Binario:</label>
+                <input type="text" id="numero-binario" name="numero-binario" 
+                       placeholder="Ej: 10101010" required pattern="[01]{8}">
+                <small>Debes ingresar exactamente 8 dígitos (0 o 1)</small>
+                <br><br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Número Decimal de 5 Dígitos</legend>
+                
+                <label for="numero-decimal-5">Número Decimal:</label>
+                <input type="text" id="numero-decimal-5" name="numero-decimal-5" 
+                       placeholder="Ej: 12345" required pattern="\d{5}">
+                <small>Debes ingresar exactamente 5 dígitos (0-9)</small>
+                <br><br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Número Decimal (1 a 5 Dígitos)</legend>
+                
+                <label for="numero-decimal-1-5">Número Decimal:</label>
+                <input type="text" id="numero-decimal-1-5" name="numero-decimal-1-5" 
+                       placeholder="Ej: 12345" required pattern="\d{1,5}">
+                <small>Debes ingresar entre 1 y 5 dígitos (0-9)</small>
+                <br><br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Patente del Automóvil</legend>
+                
+                <label for="patente">Patente:</label>
+                <input type="text" id="patente" name="patente" 
+                       placeholder="Ej: ABC123" required pattern="[A-Za-z]{3}[0-9]{3}">
+                <small>Formato: 3 letras seguidas de 3 números</small>
+                <br><br>
+            </fieldset>
+            <br><br>
+            <input type="submit" value="Enviar Números">
+        </form>
+    </section>
+</body>
+</html>
